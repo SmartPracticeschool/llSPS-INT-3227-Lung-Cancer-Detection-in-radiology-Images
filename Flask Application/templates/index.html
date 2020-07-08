@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adnup -  Lungs Cancer Detector</title>
+    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles.css')}}" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Lung Cancer - Detection System Using CNN</h1>
+    </header>
+    <main>
+        <section class="info-section">
+            <h1>Cancer Detection</h1>
+            <div>
+                <p>In a study Published in Nature Medicine , researchers said that lung cancer caused an estimated 160,000 deaths in 2018  , making it the most common cause of cancer death in the US. Lung caner screenins that use low-dose tomography have been shown to reduce mortality by 20-43 percent, but there are still challenged that results in unclear diagnoses, subsequent unnecessary procedures</p>
+                <p>Typically, the body programs cells to die at a certain stage in their life cycle to avoid overgrowth. Cancer overrides this instruction, causing cells to grow and multiply when they should not.</p>
+                <p>The overgrowth of cells leads to the development of tumors and the harmful effects of cancer.</p>    
+                <p>In lung cancer, this pattern of cell overgrowth occurs in the lungs, which are vital organs for breathing and gas exchange.</p>
+                <p>Doctors typically diagnose two lung cancer types, small cell and non-small cell, depending on how they appear under a microscope. A person is more likely to have non-small cell lung cancer than small cell.</p>    
+                <p>While anyone can develop lung cancer, cigarette smoking and exposure to smoke can increase the likelihood that a person will experience the condition. Lung cancer can develop if a person has a history of exposure to inhaled chemicals or other toxins.</p>    
+                <p>Even if this exposure to chemicals and other toxins was a long time ago, it could cause changes in lung cells that lead to cancer.</p>
+            </div>
+            
+        </section>
+        <section class="action-section">
+            <div class="action-section__picture-container">
+                <p id='upload-image-text'>Upload Image</p>
+                <img src="" alt="upload" />
+            </div>
+            <div class="action-section__action-container">
+                <input type="file" id="filechoose" class="choose">
+                <label for="filechoose">Choose</label>
+                <button class="submit" id="file-submit">Submit</button>
+            </div>
+            <div id="result">
+            </div>
+        
+        </section>
+
+    </main>
+    <footer></footer>
+    <script src="{{ url_for('static',filename='app.js') }}"></script>
+</body>
+</html>

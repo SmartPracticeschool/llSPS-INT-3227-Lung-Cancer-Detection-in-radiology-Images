@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+header{
+    background-color: rgb(0, 17, 255);
+    color: white;
+    
+    text-align: center;
+}
+
+body{
+    height: 100vh;
+    background-color: #F9D08B;
+}
+
+header h1{
+    padding: 0.5rem 1rem;
+    font-weight: 400;
+}
+
+main{
+    display: flex;
+    max-width: 90%;
+    margin: 2rem auto;
+    justify-content: center;
+}
+
+.info-section{
+    padding: 1rem;
+    margin: 1rem 3rem;
+    max-width: 40%;
+    
+}
+
+.info-section h1 {
+    margin-bottom: 1.2rem;
+}
+
+.info-section > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-section > div p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.action-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.action-section__picture-container{
+    display: inline-flex;
+    width: 350px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px blue dashed;
+}
+
+.action-section__picture-container img{
+    display: none;
+    width: 100%;
+}
+
+.action-section__picture-container p{
+    z-index : -100;
+    font-size: 1.2rem;
+}
+
+
+.action-section__action-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-section__action-container button{
+    margin: 1rem 2rem;
+    font-size: 1.1rem;
+    padding: 0.3rem 0.7rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.action-section__action-container button.submit{
+    background-color: green;
+    color: white;
+}
+
+.action-section__action-container input{
+    display: none;
+}
+
+.action-section__action-container label{
+    margin: 1rem 2rem;
+    font-size: 1.1rem;
+    padding: 0.3rem 0.7rem;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+#result{
+    padding: 0.3rem 0.7rem;
+    text-align: center;
+    /* display: none; */
+}
+
+#result.active{
+    display: inline-block;
+    border-radius: 5px;
+}
+
+#result.active.affected{
+    background-color: Red;
+}
+
+#result.active.normal{
+    background-color: green;
+}
+
+#result p{
+    color: white;
+    font-size: 1.5rem;
+}
+
